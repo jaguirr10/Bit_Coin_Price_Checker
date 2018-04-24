@@ -1,0 +1,147 @@
+
+
+<!DOCTYPE html><html lang='en' class=''>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Mukta+Mahee" rel="stylesheet">
+
+<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    
+
+	<title>BitCoin Price Checker</title> 
+
+
+<style>
+
+.cc
+{
+  background-color: transparent;
+}
+
+body {
+  font-family: 'Mukta Mahee', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.8em;
+  color: #6C7A89;
+ <!-- background-color: #3A539B; -->
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+p {
+  padding: 30px;
+}
+
+.main {
+  max-width: 500px;
+  padding: 15px 0;
+  border-radius: 5px;
+  background-color: red;
+}
+
+#rate {
+  color: ;
+}
+
+button {
+  border: 0;
+  border-radius: 0 0 5px 5px;
+  outline: none;
+  padding: 9px 20px;
+  font-family: 'Mukta Mahee', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: red;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#gbp:focus {
+  color: #fff;
+  
+  
+}
+
+#usd:focus {
+  color: #fff;
+}
+
+#eur:focus {
+  color: #fff;
+}
+
+.radio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 500px;
+  margin-top: -7px;
+  margin-top: 25px;
+  padding: 23px;
+}
+
+.radio div.button-basis {
+  flex-basis: 20%;
+}
+
+.radio div:not(:last-child) {
+  margin-right: 7px;
+}
+
+@media only screen and (max-width:500px) {
+  .radio div:not(:last-child) {
+    margin-right: 0px;
+  }
+  
+  .radio div.button-basis {
+    flex-basis: 50%;
+  }
+  
+  .radio {
+    margin-top: 0px;
+	
+  }
+  
+  button {
+    width: 100px;
+    border-radius: 5px;
+	
+  }
+  
+  #refresh:focus
+  {
+     color:white;
+  }
+</style>
+</head>
+<body class = "blue darken-4">
+<section class="container teal lighten-5 z-depth-5 ">
+  <p>Current BitCoin Price: <span id="rate">Loading...</span></p>
+</section>
+
+<section class="radio container teal lighten-2 z-depth-3  ">
+  <div class="button-basis  "><button class="click " id="refresh">Refresh</button></div>
+  <div class="button-basis   "><button class="click" id="gbp">GBP &pound;</button></div>
+  <div class="button-basis  "><button class="click" id="usd">USD &#36;</button></div>
+  <div class="button-basis   "><button class="click" id="eur">EUR &euro;</button></div>
+</section>
+
+
+<!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+	
+	<script src="main.js"></script>
+
+
+</body>
+</html>
